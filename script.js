@@ -175,3 +175,12 @@ function updateCountdown(){
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+
+// FAQ Toggle
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    item.classList.toggle("active");
+  });
+});
