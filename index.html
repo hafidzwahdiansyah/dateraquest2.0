@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dateraquest Nasional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -301,6 +302,7 @@
       </div>
 
       <div class="register-form-card glass-card">
+        <h2>Kirim Pertanyaan</h2>
         <form action="#" method="POST">
 
           <div class="input-group">
@@ -309,8 +311,8 @@
           </div>
 
           <div class="input-group">
-            <input type="email" required>
-            <label>Email</label>
+            <input type="pesan" required>
+            <label>pesan</label>
           </div>
 
           <div class="input-group">
@@ -320,7 +322,7 @@
               <option>Machine Learning</option>
               <option>Data Visualization</option>
             </select>
-            <label>Kategori Lomba</label>
+            <label>Mengenai lomba</label>
           </div>
 
           <button type="submit" class="register-btn">
@@ -334,9 +336,64 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="dq-footer">
-    © 2026 Dateraquest — All Rights Reserved
-  </footer>
+<footer class="dq-footer">
+
+  <div class="footer-top">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <img src="datera2logo.png" alt="DateraQuest Logo" class="footer-logo">
+      <h3>DateraQuest 2.0</h3>
+      <p>
+        Kompetisi Nasional Data yang diselenggarakan oleh HMSD Adyatama ITERA
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#faq">FAQ</a>
+      <a href="login.html">Pendaftaran</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Sumatera, Indonesia</p>
+      <p><i class="fas fa-envelope"></i> dateraquest@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +62 812-xxxx-xxxx</p>
+    </div>
+
+    <!-- SOCIAL + NEWSLETTER -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+
+      <div class="footer-social">
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <h4 style="margin-top:25px;">Newsletter</h4>
+      <form class="footer-newsletter">
+        <input type="email" placeholder="Masukkan email..." required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- FOOTER BOTTOM -->
+  <div class="footer-bottom">
+    <span>© 2026 DateraQuest — All Rights Reserved</span>
+    <span class="footer-dev">Designed with ❤️ for Indonesia</span>
+  </div>
+
+</footer>
 
   <script src="script.js"></script>
 </body>
