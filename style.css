@@ -41,7 +41,7 @@
   scroll-behavior:smooth;
 }
 body{
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #0e1a0e;
   overflow-x:hidden;
   position: relative;
@@ -427,15 +427,15 @@ nav ul li a:not(.btn-register):hover {
    HERO SECTION (UPGRADE PREMIUM)
 ========================= */
 .section-title{
-  font-family: "Radiora", "Rubik", sans-serif;
-  font-size: 36px;
+ font-family: "Cinzel Decorative", serif;
+  font-size: 42px;
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 
   color: var(--green-dark);
   text-align: center;
 
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   position: relative;
 
   text-shadow: 0 3px 0 rgba(0,0,0,0.12);
@@ -528,10 +528,10 @@ nav ul li a:not(.btn-register):hover {
 
 /* WRAPPER EFFECT (tanpa ubah HTML) */
 .hero h1{
-  font-family: "Berkshire Swash", cursive;
-  font-size: 76px;
-  line-height: 1.05;
-  letter-spacing: 2px;
+ font-family: "Cinzel Decorative", serif;
+  font-size: 63px;
+  font-weight: 900;
+  letter-spacing: 3px;
 
   color: var(--white);
   -webkit-text-stroke: 7px var(--green-dark);
@@ -548,6 +548,8 @@ nav ul li a:not(.btn-register):hover {
 
 /* subtitle */
 .hero p{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 16px;
   font-weight: 700;
   color: rgba(255,255,255,0.96);
@@ -1959,9 +1961,17 @@ nav ul li a:not(.btn-register):hover {
 
 /* tier wrapper */
 .sponsor-tier{
-  margin-top: 70px;
+  margin-top: 20px;
   position: relative;
 }
+.section-subtitle{
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--green-dark);
+  opacity: 0.95;
+  margin-top: 20px;
+}
+
 
 /* =========================
    TITLE TIERS (BADGE STYLE)
@@ -2629,5 +2639,93 @@ nav ul li a:not(.btn-register):hover {
 
 #home{
   padding-top: 0;
+}
+
+
+/* =========================
+   JARAK TITLE
+*/
+.cara-daftar-section,
+.sponsor-section{
+  padding: 90px 8%;
+}
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-section{
+  padding: 110px 8%;
+  text-align: center;
+  position: relative;
+}
+
+.faq-wrapper{
+  max-width: 900px;
+  margin: 70px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item{
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(16px);
+
+  border: 2px solid rgba(255,231,38,0.30);
+
+  box-shadow:
+    0 20px 55px rgba(0,0,0,0.14),
+    inset 0 0 0 2px rgba(138,193,74,0.08);
+}
+
+.faq-question{
+  width: 100%;
+  padding: 18px 22px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--green-dark);
+}
+
+.faq-icon{
+  font-size: 22px;
+  font-weight: 1000;
+  transition: 0.3s ease;
+}
+
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  text-align: left;
+}
+
+.faq-answer p{
+  padding: 0 22px 20px 22px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #1b2b1b;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.faq-item.active .faq-answer{
+  max-height: 200px;
+}
+
+.faq-item.active .faq-icon{
+  transform: rotate(45deg);
 }
 
